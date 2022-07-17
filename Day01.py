@@ -48,5 +48,11 @@ a= int(a)
 b= int(b)
 print(f'{a+b}\n{a-b}\n{a*b}\n{a/b}\n{a%b}')
 
+# 백준 10925문제 아주 간단했는데 쉽게 풀지 못함..... 노력이 필요하다고 느낀다.
+
+id = input()
+print(id +'??!')
+
+
 
 
