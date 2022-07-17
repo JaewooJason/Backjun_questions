@@ -18,3 +18,35 @@ print(a+b)
 a,b = map(int,input().split())
 print(a-b)
 
+# A*B
+a,b = map(int,input().split())
+print(a*b)
+
+# A/B
+a,b = map(int,input().split())
+print(a/b)
+
+# 사칙연산
+def f(a,b):
+    print(a+b)
+    print(a-b)
+    print(a*b)
+    print(a/b)
+    print(a%b)
+a,b = map(f,input().split())
+''' 위에 했던것이 처음에 할려고 시도 했던것 '''
+a,b = map(int,input().split())
+print(a+b)
+print(a-b)
+print(a*b)
+print(int(a/b))
+print(a%b)
+
+# 다른 방법으로는
+a,b = input().split()
+a= int(a)
+b= int(b)
+print(f'{a+b}\n{a-b}\n{a*b}\n{a/b}\n{a%b}')
+
+
+
