@@ -14,3 +14,7 @@ print('||_/=\\\\__|')
 a,b = map(int, input().split())
 print(a+b)
 
+# A-B
+a,b = map(int,input().split())
+print(a-b)
+
