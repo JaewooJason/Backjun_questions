@@ -30,3 +30,12 @@ for i in range(len(b),0,-1):
     print(a * int(b[i-1]))
 
 print(a*b)
+
+print('n번째 시도...')
+num1 = int(input())
+num2 = int(input())
+
+print(num1 * (num2%10))
+print(num1 * ((num2%100)//10))
+print(num1 * (num2 // 100))
+print(num1 * num2)
