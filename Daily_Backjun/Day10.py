@@ -49,3 +49,20 @@ abc = list(str(a*b*c))
 for i in range(10):
     print(abc.count(str(i)))
 
+# 3052문제 나머지
+list = []
+
+for i in range(10):
+    list.append(int(input()))
+
+did = list%42
+print(did)
+
+list = []
+for i in range(10):
+    n = (int(input()))
+    list.append(n%42)
+result =set(list)
+print(len(result))
+
+
