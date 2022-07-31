@@ -29,3 +29,21 @@ for i in range(t):
     print(f'{rate:.3f}%')
 
 # 이 문제 역시 for 구문의 대한 사용에 대한 이해가 필요하다.
+
+def solve(a):
+    return sum(a)
+
+# 4673 문제 셀프넘버 이건 너무 어렵다..... 이해가 많이 필요,,,,,,
+def d(n):
+    n = n + sum(map(int, str(n)))
+    return n
+
+
+nonself = set()
+
+for i in range(1, 10001):
+    nonself.add(d(i))
+
+for j in range(1, 10001):
+    if j not in nonself:
+        print(j)
