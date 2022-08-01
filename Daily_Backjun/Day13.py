@@ -11,3 +11,8 @@ def hansu(n):
     return cnt
 num = int(input())
 print(hansu(num))
+
+# 11654 아스키 코드
+a = input()
+print(ord(a))
+''' 아스키 코드로 바꾸는 함수는 ord이다.'''
