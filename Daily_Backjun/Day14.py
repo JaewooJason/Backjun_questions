@@ -20,3 +20,13 @@ alp = list(range(97,123))# 아스키 코드에 대한 이해가 필요 그냥 �
 for i in alp:
     print(word.find(chr(i)))
 
+# 2675 문제 문자열 반복
+
+t = int(input())
+
+for _ in range(t):
+    s, word = input().split()
+    for i in word:
+        print(i*int(s), end='')
+    print()
+
