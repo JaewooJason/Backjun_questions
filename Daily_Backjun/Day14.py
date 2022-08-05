@@ -30,3 +30,16 @@ for _ in range(t):
         print(i*int(s), end='')
     print()
 
+# 1157 단어장
+
+word = input().lower()
+tmp_list = list(set(word))
+cnt = []
+
+for i in tmp_list:
+    count = word.count(i)
+    cnt.append(count)
+if cnt.count(max(cnt))>2:
+    print('?')
+else: print(tmp_list[(cnt.index(max(cnt)))].upper())
+
