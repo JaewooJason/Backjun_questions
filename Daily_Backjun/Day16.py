@@ -26,5 +26,5 @@ time = 0
 for i in num:
     for j in dial:
         if i in j :
-            time += dial.index(j) + 3
+            time += dial.index(j) + 3 # 항상주의 메세드를 사용할때에는 []가 아니라 ()이다!!!!
 print(time)
