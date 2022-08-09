@@ -33,8 +33,8 @@ n = int(input())
 while True:
     flag = True
     for i in str(n):
-        if i != '4' and i != '7':
-            flag = False
+        if i != '4' and i != '7': # 문자열로 바꾸는 이유는 하나하나 비교를 하기 위해서이다. 4와 7이 들어있나를 확인하기 위해서 하나하나 확인하기 때문에 100이 경우 -1 세번 이루어지기 때문에 다음문자는 97이 되는것이다.
+            flag = False # 여기서 하나라도 False 이면 정답이 아니기 때문에 답이 아니다.
             n -= 1
     if flag:
         print(n)
