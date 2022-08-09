@@ -11,7 +11,7 @@ for i in range(1,star+1):
 star = int(input())
 
 for i in range(1,star+1):
-    print(' '*(star-i) +'*'*i)
+    print(' '*(star-i) +'*'*i) # range를 통해서 1에서부터 +1까지 돌기 때문에 변수로 받은 star에서 ' '* -i을 해주고 '*'*i해주면 된다.
 
 
 # 10871 문제 X보다 작은수
@@ -24,5 +24,20 @@ a = list(map(int,sys.stdin.readline().split()))
 for i in range(n):
     if a[i] < x:
         print(a[i], end=" ")
+
+
+# 1526 문제 가장 큰 금민수
+
+n = int(input())
+
+while True:
+    flag = True
+    for i in str(n):
+        if i != '4' and i != '7':
+            flag = False
+            n -= 1
+    if flag:
+        print(n)
+        break
 
 
