@@ -16,3 +16,21 @@ while n > bee:
     cnt += 1
 print(cnt)
 
+
+# 1193 분 찾기
+
+import sys
+input = sys.stdin.readline
+n = int(input())
+f_line = 1
+while n > f_line:
+    n -= f_line
+    f_line += 1
+
+if f_line % 2 == 0:
+    num1 = n
+    num2 = f_line - n + 1
+elif f_line % 2 == 1:
+    num1 = f_line - n + 1
+    num2 = n
+print(num1, '/', num2, sep="")
