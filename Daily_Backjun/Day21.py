@@ -15,7 +15,6 @@ print(sum(map(int,input().split())))
 n = int(input())
 num = list(map(int,input().split(' ')))
 cnt1 = 0
-
 for nums in num:
     cnt2 = 0
     if nums == 1:
